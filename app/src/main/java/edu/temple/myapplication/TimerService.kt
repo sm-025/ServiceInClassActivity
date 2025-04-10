@@ -30,7 +30,6 @@ class TimerService : Service() {
 
         // Start a new timer
         fun start(startValue: Int){
-
             if (!paused) {
                 if (!isRunning) {
                     if (::t.isInitialized) t.interrupt()
@@ -119,6 +118,4 @@ class TimerService : Service() {
 
         Log.d("TimerService status", "Destroyed")
     }
-
-
 }
