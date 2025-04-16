@@ -17,6 +17,7 @@ class TimerService : Service() {
     lateinit var t: TimerThread
 
     private var paused = false
+    var currentTime = 0
 
     inner class TimerBinder : Binder() {
 
@@ -88,6 +89,7 @@ class TimerService : Service() {
             try {
                 for (i in startValue downTo 1)  {
                     Log.d("Countdown", i.toString())
+
 
                     timerHandler?.sendEmptyMessage(i)
 

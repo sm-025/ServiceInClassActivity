@@ -10,7 +10,13 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/action_stop"
-        android:icon="@android:drawable/button_onoff_indicator_off"
+        android:icon="@android:drawable/alert_light_frame"
         android:title="Stop"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_pause"
+        android:icon="@android:drawable/ic_media_pause"
+        android:title="Pause"
         app:showAsAction="always" />
 </menu>
